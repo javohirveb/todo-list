@@ -52,9 +52,9 @@ function showTodos() {
     listGroupTodo.innerHTML = ''
     todos.forEach((item, i) => {
         listGroupTodo.innerHTML += `
-            <li ondblclick="setCompleted(${i})" class="list-group-item d-flex justify-content-between ${item.completed == true ? 'completed' : ''}">
-                ${item.text}
-                <div class="todo-icons">
+            <li ondblclick="setCompleted(${i})" class="list-group-item d-flex justify-content-between flex-sm-row flex-column ${item.completed == true ? 'completed' : ''}">
+                <p class="text-break mb-0">${item.text}</p>
+                <div class="todo-icons text-end">
                     <span class="opacity-50 me-2">${item.time}</span>
                     <img onclick=(editTodo(${i})) src="img/edit.svg" alt="edit icon" width="25" height="25">
                     <img onclick=(deleteTodo(${i})) src="img/delete.svg" alt="delete icon" width="25" height="25">

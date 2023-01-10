@@ -5,8 +5,8 @@
 .container {
   max-width: 600px;
   width: 100%;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .list-group-item {
